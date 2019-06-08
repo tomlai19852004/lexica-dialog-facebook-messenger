@@ -1,0 +1,41 @@
+{
+  "name": "lexica-dialog-facebook-messenger",
+  "version": "1.0.0",
+  "description": "Facebook messenger plugin for Lexica virual agent",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config jest.config.js --runInBand",
+    "lint": "tslint -p tsconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomlai19852004/lexica-dialog-facebook-messengere.git"
+  },
+  "keywords": [
+    "Lexica",
+    "Virtual Agent"
+  ],
+  "author": "Tom Lai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomlai19852004/lexica-dialog-facebook-messengere/issues"
+  },
+  "homepage": "https://github.com/tomlai19852004/lexica-dialog-facebook-messengere#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "jest": "^24.8.0",
+    "lexica-dialog-core": "^1.0.1",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.17.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.5.1"
+  }
+}
