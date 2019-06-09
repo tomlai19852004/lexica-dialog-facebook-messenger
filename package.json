@@ -16,18 +16,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tomlai19852004/lexica-dialog-facebook-messengere.git"
+    "url": "git+https://github.com/tomlai19852004/lexica-dialog-facebook-messenger.git"
   },
   "keywords": [
     "Lexica",
     "Virtual Agent"
   ],
   "author": "Tom Lai",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tomlai19852004/lexica-dialog-facebook-messengere/issues"
+    "url": "https://github.com/tomlai19852004/lexica-dialog-facebook-messenger/issues"
   },
-  "homepage": "https://github.com/tomlai19852004/lexica-dialog-facebook-messengere#readme",
+  "homepage": "https://github.com/tomlai19852004/lexica-dialog-facebook-messenger#readme",
   "devDependencies": {
     "@types/jest": "^24.0.13",
     "jest": "^24.8.0",
