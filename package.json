@@ -1,6 +1,6 @@
 {
   "name": "lexica-dialog-facebook-messenger",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Facebook messenger plugin for Lexica virual agent",
   "main": "index.js",
   "scripts": {
