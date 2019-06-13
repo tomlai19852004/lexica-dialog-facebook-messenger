@@ -15,7 +15,7 @@ jest.mock('request-promise-native', () => () => ({
   last_name: 'Cheung',
 }));
 
-describe('Facebook Sender Info Middleware', async () => {
+describe('Facebook Sender Info Middleware', () => {
   it('should get sender\'s first name and last name', async () => {
     const context: any = {
       uni: 'hku',
