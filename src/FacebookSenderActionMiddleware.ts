@@ -41,7 +41,10 @@ const facebookSenderActionMiddleware: Middleware = async (context, next) => {
       sendAction(senderId, apiBaseUrl, accessToken, "mark_seen")
     ];
 
-    if (uniConfigs.get(RunTimeConfig.SUSPEND_AUTO_REPLY)) {
+    if (
+      uniConfigs.has(RunTimeConfig.SUSPEND_AUTO_REPLY) &&
+      (uniConfigs.get(RunTimeConfig.SUSPEND_AUTO_REPLY).value as boolean)
+    ) {
       actionItems.push(
         sendAction(senderId, apiBaseUrl, accessToken, "typing_on")
       );
